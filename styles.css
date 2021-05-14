@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+
+  /* Colours */
+
+  /* Primary Colours */
+
+  --clr-primary-orange: hsl(31, 77%, 52%);
+  --clr-primary-cyan-600: hsl(184, 100%, 22%);
+  --clr-primary-cyan-800: hsl(179, 100%, 13%);
+
+  /* Neutral Colours */
+
+  --clr-neutral-white: hsla(0, 0%, 100%, 0.75);
+  --clr-neutral-gray: hsl(0, 0%, 95%);
+
+  /* Fonts */
+
+  --ff-heading: 'Big Shoulders Display', cursive;
+  --ff-main: 'Lexend Deca', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: var(--clr-neutral-gray);
+  color: var(--clr-neutral-white);
+  font-family: var(--ff-main);
+  font-size: 15px;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 3rem auto;
+  width: 88%;
+}
+
+.card {
+  padding: 3rem;
+}
+
+.sedans {
+  background: var(--clr-primary-orange);
+  border-radius: 8px 8px 0 0;
+}
+
+.suvs {
+  background: var(--clr-primary-cyan-600);
+}
+
+.luxury {
+  background: var(--clr-primary-cyan-800);
+  border-radius: 0 0 8px 8px;
+}
+
+.title {
+  color: white;
+  font-family: var(--ff-heading);
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.description {
+  line-height: 1.7;
+}
+
+.button,
+.button:active {
+  display: inline-block;
+  text-decoration: none;
+  background: white;
+  margin-top: 1.5rem;
+  padding: 1rem 2rem;
+  border-radius: 35px;
+  cursor: pointer;
+}
+
+.sedans .button {
+  color: var(--clr-primary-orange);
+}
+
+.suvs .button {
+  color: var(--clr-primary-cyan-600);
+}
+
+.luxury .button {
+  color: var(--clr-primary-cyan-800);
+}
+
+@media screen and (min-width: 860px) {
+
+  .container {
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 85%;
+    max-width: 960px;
+    height: 57vh;
+    min-height: 500px;
+  }
+
+  .card {
+    position: relative;
+  }
+
+  .sedans {
+    border-radius: 8px 0 0 8px;
+  }
+
+  .luxury {
+    border-radius: 0px 8px 8px 0;
+  }
+
+  .title {
+    font-size: 2.7rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .button {
+    position: absolute;
+    bottom: 3rem;
+    font-size: 1rem;
+    transition: all .2s ease-in;
+    border: 3px solid white;
+  }
+
+  .button:hover {
+    background: transparent;
+    border: 3px solid white;
+    color: white;
+  }
+
+}
