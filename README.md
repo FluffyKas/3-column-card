@@ -44,6 +44,6 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - Fluffy Kas(https://www.frontendmentor.io/profile/FluffyKas)
+- Frontend Mentor - [Fluffy Kas](https://www.frontendmentor.io/profile/FluffyKas)
 
 
