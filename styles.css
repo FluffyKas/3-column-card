@@ -97,7 +97,13 @@ body {
   color: var(--clr-primary-cyan-800);
 }
 
-@media screen and (min-width: 860px) {
+@media screen and (min-width: 650px) {
+  .container {
+    max-width: 600px;
+  }
+}
+
+@media screen and (min-width: 960px) {
 
   .container {
     grid-template-columns: 1fr 1fr 1fr;
